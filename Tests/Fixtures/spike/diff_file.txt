@@ -1,0 +1,6 @@
+diff --git a/Content/Scenes/Courtyard.plScene b/Content/Scenes/Courtyard.plScene
+--- a/Content/Scenes/Courtyard.plScene
++++ b/Content/Scenes/Courtyard.plScene
+@@ -1 +1 @@
+-scene v1
++scene v2

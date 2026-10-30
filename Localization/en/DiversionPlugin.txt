@@ -1,0 +1,25 @@
+# Menus and actions
+
+G.Diversion;Diversion
+Diversion.PauseSync;Pause Sync
+Diversion.Refresh;Refresh Status
+Diversion.OpenInDiversion;Open in Diversion
+Diversion.CheckIgnoreFile;Check Ignore File...
+Diversion.Settings;Diversion Settings...
+
+# Panels
+
+Panel.VersionControl;Changes
+Panel.VersionControlLocks;Locks
+Panel.VersionControlHistory;History
+Panel.VersionControlConflicts;Conflicts
+
+# Preferences
+
+plDiversionProjectPreferences;Diversion
+ShowBadges;Show Status Badges
+ShowOthersEditing;Show Who Else Is Editing
+CheckIgnoreFile;Check the Ignore File on Open
+WarnOthersEditing;Banner When Someone Else Is Editing
+AskToLock;Ask to Lock on First Edit
+LockableFiles;Lockable Files

@@ -1,0 +1,20 @@
+update encountered conflicts, resolving with accept-incoming
+Conflicts resolved with accept-incoming
+Sync in progress (press Ctrl-C to stop waiting) {{spinner}}
+Sync in progress (press Ctrl-C to stop waiting) {{spinner}}
+Inbound changes:  0 / 1 (0B / 15B)
+Currently syncing: Content/Scenes/Courtyard.plScene (modified remotely)
+Sync in progress (press Ctrl-C to stop waiting) {{spinner}}
+Queued filesystem events: 3
+Sync in progress (press Ctrl-C to stop waiting) {{spinner}}
+Queued filesystem events: 3
+Sync in progress (press Ctrl-C to stop waiting) {{spinner}}
+Queued filesystem events: 3
+Sync in progress (press Ctrl-C to stop waiting) {{spinner}}
+Queued filesystem events: 3
+Sync in progress (press Ctrl-C to stop waiting) {{spinner}}
+Queued filesystem events: 3
+Sync complete
+Recently synced: Content/Scenes/Courtyard.plScene (modified locally) at 2026-10-20 15:26:22.5
+Recently synced: Content/Scenes/Courtyard.plScene (modified remotely) at 2026-10-20 15:27:17.9
+Local workspace is synced to commit: dv.commit.6

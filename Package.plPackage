@@ -1,0 +1,43 @@
+// Diversion Version Control — a Plasma package.
+//
+// The AUTHORED manifest. Component hashes and sizes are NOT here: the packaging step computes
+// those and emits them into the published manifest that ships inside the .plpkg.
+//
+// Field reference and validation rules: Docs/PluginPackageManagerPlan.html §05.
+
+PackageInfo
+{
+	string %Id{"plasma.diversion"}
+	string %Version{"0.2.2"}
+	string %Publisher{"PlasmaTechnology"}
+	string %License{"MIT"}
+	string %Homepage{""}
+
+	// The declared support window. Leave the maximum empty (unbounded) unless a specific newer engine is KNOWN to
+	// break this package.
+	string %MinEngineVersion{"0.11.2"}
+	string %MaxEngineVersion{""}
+
+	// The binary-compatibility gate. Must equal plSdkVersion::GetAbiTag() of the engine this is built against.
+	string %AbiTag{"win64-msvc19-0.11.2-abi6-dev"}
+
+	string %DisplayName{"Diversion Version Control"}
+	string %Category{"Tools"}
+	string %Description{"Shows Diversion file states, sync and who else is editing an asset, inside the editor."}
+
+	// Artwork is optional. Point these at files in this package once there is any.
+	string %Icon{""}
+	string %Banner{""}
+
+	string %EditorPlugins{"plEditorPluginDiversion"}
+	string %EditorEnginePlugins{}
+	string %RuntimePlugins{}
+	string %PackageDependencies{}
+
+	// Names of the menus, actions and preferences.
+	Localization { string %Path{"Localization"} }
+
+	Component { string %Name{"manifest"} string %Platform{"any"} }
+	Component { string %Name{"editor-win64"} string %Platform{"win64"} string %Path{"Bin/Windows_x64_Development/plEditorPluginDiversionMcp.dll"} }
+	Component { string %Name{"localization"} string %Platform{"any"} }
+}

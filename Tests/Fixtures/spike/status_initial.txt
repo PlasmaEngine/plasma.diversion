@@ -1,0 +1,14 @@
+In repo plasma-dv-spike dv.repo.f963d1b9-e446-42af-86e6-cba25a3ad8c4
+On branch main dv.branch.1
+Cloud workspace is over commit dv.commit.1
+Working in workspace ws1 @ HOST01 (dv.ws.34e4f8ed-febc-4074-ad5b-0b9b189b015f)
+Total modified paths: 7 (4 files)
+New:
+	 .dvignore
+	 Content
+	 Content/Materials
+	 Content/Materials/Arch_Stone.plMaterialAsset
+	 Content/Materials/Arch_Stone_D.png
+	 Content/Scenes
+	 Content/Scenes/Courtyard.plScene
+

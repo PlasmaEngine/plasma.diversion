@@ -1,0 +1,15 @@
+In repo plasma-dv-spike dv.repo.f963d1b9-e446-42af-86e6-cba25a3ad8c4
+On branch main dv.branch.1
+Cloud workspace is over commit dv.commit.3
+Working in workspace ws1 @ HOST01 (dv.ws.34e4f8ed-febc-4074-ad5b-0b9b189b015f)
+Local workspace is synced to commit: dv.commit.3
+Total modified paths: 2 (2 files)
+New:
+	 Content/Materials/Arch_Stone2.plMaterialAsset
+Modified:
+	 Content/Scenes/Courtyard.plScene
+
+Your workspace can't be brought up to date with branch main due to conflicts in the following files:
+     Content/Scenes/Courtyard.plScene
+Please run `dv update` to resolve.
+

@@ -1,0 +1,97 @@
+##### help status
+status [<paths>...] [--sync-only] [--nowait] [--commit-id-only] [--no-limit]  Show the working tree and sync status, or check the sync status of a specific file or directory
+	<paths>	When specified, shows the sync status of the given files or directories; implies `sync-only` and `nowait`
+	--sync-only	Show sync status only
+	--nowait	Exit without waiting for workspace to be synced
+	--commit-id-only	Show only the commit ID of the workspace
+	--no-limit	Show complete changelist without limiting the output size
+##### help lock
+lock [<path>] [sub-command]  List, acquire, or release file locks
+	<path>	Path to the file to lock (omit to list locks)
+	-d <path> [-f]  Release a file lock
+		<path>	Path to the file to unlock
+		-f	Force-release a lock held by another user (requires admin)
+##### help branch
+branch [sub-command]  List, create, or delete branches
+	-c [<branch_name>] [--no-checkout]  Create a new branch
+		<branch_name>	The name of the new branch
+		--no-checkout	When used with `-c`, doesn't switch to the branch
+	-d [<branch_id>] [-f]  Delete a branch
+		<branch_id>	The ID or the name of an existing branch
+		-f	force - don't ask for confirmation
+	-r [<branch_id>] [<name>]  Rename a branch
+		<branch_id>	The ID or the name of an existing branch
+		<name>	The new name of the branch
+##### help shelf
+shelf [sub-command]  List, create, show, apply, rename, or delete shelves
+	create <name> [<paths>...] [--no-reset]  Create a shelf from current workspace changes
+		<name>	The name of the new shelf
+		<paths>	Paths to shelve (if not specified, shelves all changes)
+		--no-reset	Keep workspace changes after creating the shelf
+	show <shelf>  Show changes contained in a shelf
+		<shelf>	The ID or name of the shelf to show
+	apply <shelf> [--keep] [-f]  Apply a shelf to the current workspace
+		<shelf>	The ID or name of the shelf to apply
+		--keep	Keep the shelf after applying (default: delete)
+		-f	Force - don't ask for confirmation
+	delete <shelf> [-f]  Delete a shelf
+		<shelf>	The ID or name of the shelf to delete
+		-f	Force - don't ask for confirmation
+	rename <shelf> <new_name>  Rename a shelf
+		<shelf>	The ID or name of the shelf to rename
+		<new_name>	The new name for the shelf
+##### help repo
+repo [sub-command]  List repos you have access to, or specify a repo to delete
+	-d <repo_id> [-f]  Delete a repo
+		<repo_id>	The ID of the repository to delete
+		-f	force - don't ask for confirmation
+##### help conflict-backups
+conflict-backups [sub-command]  List or remove conflict backup files (.dv-conflict) from the workspace
+	list [<paths>...]  List conflict backup files in the workspace
+		<paths>	Only list backup files under these paths
+	clear [<paths>...] [-a] [-f]  Remove conflict backup files from the workspace
+		<paths>	Remove backup files under these paths
+		-a	Remove all conflict backup files in the workspace
+		-f	force - remove files without confirmation
+##### help log
+log [<path>] [-n <limit>] [--oneline] [--show-squashed] [--since <since>] [--until <until>] [--date <date>]  Get a list of commits
+	<path>	Show commits affecting this file or directory
+	-n, --limit	Limit number of commits shown (default 20, max 1000)
+	--oneline	Show each commit on a single line
+	--show-squashed	Also show commits that merges squashed away (requires a path)
+	--since	Show commits after date (ISO format or relative like '1 week ago')
+	--until	Show commits before date (ISO format or relative like '1 week ago')
+	--date	Output date format: 'iso' for ISO 8601 UTC (2006-01-02T15:04:05Z)
+##### help diff
+diff [<paths>...] [--base <base>] [--compare <compare>] [--color <color>] [--name-status]  Show differences between workspace changes and the base commit
+	<paths>	A file or directory to compare. Defaults to the entire repository.
+	--base	Base reference to compare from (branch name, commit ID, or tag). Defaults to workspace's base commit.
+	--compare	Reference to compare to (branch name, commit ID, or tag). Defaults to workspace.
+	--color	When to use colors: auto (default), always, or never
+	--name-status	Show only names and status of changed files (A=added, M=modified, D=deleted, R=renamed)
+##### help show
+show [<ref>] [--name-status] [--date <date>] [--color <color>]  Show commit details
+	<ref>	Branch name, branch ID, commit ID, or tag ID. Defaults to current commit.
+	--name-status	Show names and status of changed files (A=added, M=modified, D=deleted, R=renamed)
+	--date	Output date format: 'iso' for ISO 8601 UTC (2006-01-02T15:04:05Z)
+	--color	When to use colors: auto (default), always, or never
+##### help preferences
+preferences [sub-command]  Gets or sets the workspace preferences
+	-add [<folder_name>]  Select a folder to be synced
+		<folder_name>	The name of the folder to add to be synced
+	-remove [<folder_name>]  Select a folder to stop syncing
+		<folder_name>	The name of the folder to stop syncing
+##### help tag
+tag [sub-command] [--json]  List, create, modify, or delete tags
+	--json	Use JSON output format
+	-c [<name>] [-a <description>] [--ref <commit_id>]  Tag a commit with an optional message
+		<name>	The name of the new tag
+		-a	A description of the tag
+		--ref	The commit ID to reference by the tag. By default, the current checked out commit is used.
+	-d <tag_id> [-f]  Delete a tag
+		<tag_id>	The ID of the tag
+		-f	force - don't ask for confirmation
+	-m [<tag_id>] [-a <description>] [--name <name>]  Modify a tag
+		<tag_id>	The ID of the tag
+		-a	A description of the tag
+		--name	The name of the new tag

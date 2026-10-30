@@ -1,0 +1,23 @@
+Local workspace is synced to commit: dv.commit.3
+All workspace changes were shelved. Shelf ID: dv.shelf.fddbd451-5d88-4e26-9f9b-9ef2c8d1aa7d
+On branch art/lighting dv.branch.3
+Sync in progress (press Ctrl-C to stop waiting) {{spinner}}
+Inbound changes:  3 / 4 (16B / 20B)
+Queued filesystem events: 8
+Currently syncing: Content/Materials/Arch_Stone_N.png (added remotely)
+Sync in progress (press Ctrl-C to stop waiting) {{spinner}}
+Queued filesystem events: 10
+Sync in progress (press Ctrl-C to stop waiting) {{spinner}}
+Queued filesystem events: 10
+Sync in progress (press Ctrl-C to stop waiting) {{spinner}}
+Queued filesystem events: 10
+Sync in progress (press Ctrl-C to stop waiting) {{spinner}}
+Queued filesystem events: 10
+Sync in progress (press Ctrl-C to stop waiting) {{spinner}}
+Queued filesystem events: 9
+Sync in progress (press Ctrl-C to stop waiting) {{spinner}}
+Queued filesystem events: 1
+Sync complete
+Recently synced: Content/Scenes/Courtyard.plScene (modified locally) at 2026-10-20 15:22:45.9
+Recently synced: Content/Materials/Arch_Stone_N.png (added remotely) at 2026-10-20 15:22:48.0
+Local workspace is synced to commit: dv.commit.4

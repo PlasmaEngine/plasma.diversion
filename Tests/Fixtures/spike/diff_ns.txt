@@ -1,0 +1,4 @@
+R	Content/Materials/Arch_Stone.plMaterialAsset -> Content/Materials/Arch_Stone2.plMaterialAsset
+D	Content/Materials/Arch_Stone_D.png
+M	Content/Scenes/Courtyard.plScene
+A	Content/Materials/Arch_Stone_N.png

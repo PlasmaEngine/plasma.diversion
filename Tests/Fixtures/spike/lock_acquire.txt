@@ -1,0 +1,7 @@
+Failed to lock file: Oh no, looks like something went wrong!
+
+An engineer has been notified - we’re on it. Your files are safe and you can continue working normally.
+
+Please run `dv support` if the issue persists.
+[failed to execute PUT '/repos/{repo_id}/locks/{path}' (SrcHandlersv2FileLocksLockFile) [f105c3fb-406c-4834-93cd-0d426d8c114f]: decode response: request failed: {"status":403,"detail":"Hard locks require a Studio or Enterprise subscription"}
+: unexpected status code: 403]

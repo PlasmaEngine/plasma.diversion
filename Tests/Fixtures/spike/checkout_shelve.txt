@@ -1,0 +1,6 @@
+Local workspace is synced to commit: dv.commit.3
+On branch art/lighting dv.branch.3
+Sync in progress (press Ctrl-C to stop waiting) {{spinner}}
+Sync complete
+Recently synced: Content/Materials/Arch_Stone_N.png (added locally) at 2026-10-20 15:22:01.8
+Local workspace is synced to commit: dv.commit.3
